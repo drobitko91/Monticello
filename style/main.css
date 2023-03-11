@@ -31,7 +31,22 @@ html {
           align-items: center;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -43,10 +58,28 @@ html {
 .nav__link:last-child {
   margin-right: 0;
 }
+.nav__link:hover .dot {
+  background-color: white;
+}
 
-.social-media__icon {
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: solid white 1px;
+  margin-right: 14px;
+}
+.dot__active {
+  background-color: white;
+}
+
+.social-media__link {
+  text-decoration: none;
   margin-right: 20px;
 }
-.social-media__icon:last-child {
+.social-media__link:last-child {
   margin-bottom: 0;
+}
+.social-media__link:hover {
+  opacity: 0.65;
 }

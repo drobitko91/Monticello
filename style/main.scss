@@ -37,7 +37,14 @@ html {
   align-items: center;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav__link {
+  display: flex;
+  align-items: center;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -49,13 +56,36 @@ html {
   &:last-child {
     margin-right: 0;
   }
+
+  &:hover {
+    .dot {
+      background-color: white;
+    }
+  }
 }
 
-.social-media__icon {
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: solid white 1px;
+  margin-right: 14px;
+
+  &__active {
+    background-color: white;
+  }
+}
+
+.social-media__link {
+  text-decoration: none;
   margin-right: 20px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:hover {
+    opacity: 0.65;
   }
 }
 
