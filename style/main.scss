@@ -1,0 +1,62 @@
+// fonts start
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro&display=swap');
+
+// fonts end
+
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+  
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+// hero start
+
+
+.hero {
+  background-image: url(../img/bg-header.jpg);
+}
+
+// hero end
+
+
+// header start
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: white;
+  margin-right: 70px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-media__icon {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// header end
