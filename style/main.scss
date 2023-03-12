@@ -16,7 +16,7 @@ html {
 
 .wrapper {
   max-width: 1600px;
-
+  height: 800px;
   margin: 0 auto;
 }
 
@@ -26,6 +26,7 @@ html {
   position: absolute;
   width: 100%; 
   top: 53px;
+  z-index: 1;
 }
 
 .header-wrapper {
@@ -70,7 +71,7 @@ html {
   border: solid white 1px;
   margin-right: 14px;
 
-  &__active {
+  &_active {
     background-color: white;
   }
 }
@@ -95,18 +96,18 @@ html {
 
 
 .first-screen {
-  height: 80vh;
   background: url(../img/bg_mask-group.png), linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .heading {
+  height: calc(100% - 90px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+    
   &__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -123,17 +124,32 @@ html {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.3em;
-    color: white;
-    margin-bottom: 240px;
+    color: white;    
   }
 }
 
 .arrow {
-  margin: 0 auto;
-  width: 40.09px;
+  margin: -90px auto;
+  width: 40px;
   height: 40px;
   border: solid 1px white;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+
+}
+
+.arrow__down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 // first-screen end
