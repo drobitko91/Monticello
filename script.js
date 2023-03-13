@@ -4,7 +4,7 @@ $(document).ready(function(){
       arrows: false,
       dots: true,
       fade: true,
-      speed: 400,
+      speed: 500,
       cssEase: 'linear'
     });
   });
