@@ -134,7 +134,7 @@ html {
   color: white;
 }
 
-.arrow {
+.arrow-heading-down {
   margin: -90px auto;
   width: 40px;
   height: 40px;
@@ -158,9 +158,9 @@ i {
   padding: 3px;
 }
 
-.arrow__down {
-  transform: rotate(45deg);
+.arrow-down {
   -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .projects {
@@ -292,9 +292,13 @@ i {
   background: url(../img/bg-news.png), linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 .news-wrapper {
   height: 978px;
+}
+.news-content {
+  position: relative;
 }
 
 .news-heading {
@@ -310,13 +314,76 @@ i {
   margin: 30px auto;
 }
 
-.slider {
+.arrow-news-left {
+  width: 40px;
+  height: 40px;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 250px;
+  left: -115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.arrow-news-right {
+  width: 40px;
+  height: 40px;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 250px;
+  right: -115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+i {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.arrow-left {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.arrow-right {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.slider-item {
   max-width: 370px;
   background: white;
+  margin: 0 20px;
 }
+.slider-item:last-child {
+  margin-right: 0;
+}
+
 .slider-content {
-  padding-left: 20px;
+  padding: 0 20px;
 }
+
 .slider-content__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -325,6 +392,7 @@ i {
   color: #2C4058;
   margin: 30px 0 15px;
 }
+
 .slider-content__desc {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -371,9 +439,7 @@ i {
   padding-bottom: 40px;
 }
 .news-slider.slick-initialized.slick-slider.slick-dotted .slick-slide {
-  margin-right: 20px;
   overflow: hidden;
-  margin-left: 20px;
 }
 .news-slider.slick-initialized.slick-slider.slick-dotted ul {
   display: -webkit-box;

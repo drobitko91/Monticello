@@ -18,7 +18,8 @@ $(document).ready(function(){
   autoplaySpeed: 4000,
   arrows: true,
   dots: true,
-  centerPadding: '40px',
+  prevArrow: $('.arrow-news-left'),
+  nextArrow: $('.arrow-news-right'),
   });
 });
 
