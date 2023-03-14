@@ -165,7 +165,7 @@ i {
   margin-top: 100px;  
 }
 
-.projects-heading{
+.heading-item {
   margin-bottom: 147px;
 
   &::before {
@@ -185,6 +185,10 @@ i {
   line-height: 54px;
   color: #2C4058;
   text-align: center;
+
+  &_color {
+    color: white;
+  }
 }
 
 .content {
@@ -192,6 +196,10 @@ i {
   align-items: center;
   justify-content: center;
   margin-bottom: 177px;
+
+  &_bottom {
+    margin-bottom: 120px;
+  }
 }
 
 .rectangles {
@@ -278,3 +286,131 @@ i {
   }
 }
 // projects end
+
+// news start
+
+.news {
+  background: url(../img/bg-news.png), linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-wrapper {
+    height: 978px;
+  }
+}
+
+.news-heading {
+  padding-top: 120px;
+  padding-bottom: 90px;
+
+  &::before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 100px;
+    border: 1px solid white;
+    margin: 30px auto;        
+  }
+}
+
+.slider {
+  max-width: 370px;
+  background: white;  
+
+  &-content {
+    padding-left: 20px;
+  }
+
+  &-content__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2C4058;
+    margin: 30px 0 15px;
+  }
+
+  &-content__desc {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2C4058;
+    margin-bottom: 39px;
+  }
+}
+
+.profile {
+  display: flex;
+  padding-bottom: 30px;
+  
+
+  &__avatar {
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+
+  &-info__name {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 6px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2C4058;
+  }
+
+  &-info__data {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #55B7FF;
+  }
+}
+
+// news end
+
+// style for news-slider
+
+.news-slider.slick-initialized.slick-slider.slick-dotted {
+  display: flex; 
+  flex-direction: row;
+  padding-bottom: 40px;
+ 
+  .slick-slide {
+    margin-right: 20px;
+    overflow: hidden;
+    margin-left: 20px;
+  }
+
+  ul {
+    display: flex;
+  }
+  .slick-dots {
+    position: absolute;    
+    top: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+
+    li {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      border: solid rgb(255, 255, 255) 1px;
+      margin-right: 40px;
+      cursor: pointer;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    button {
+      display: none;
+    }
+
+    .slick-active {
+      background-color: white;
+    }
+}
