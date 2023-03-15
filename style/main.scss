@@ -176,6 +176,10 @@ i {
     border: 1px solid black;
     margin: 30px auto;        
   }
+
+  &_contacts {
+    margin-bottom: 42px;
+  }
 }
 
 .title {
@@ -463,5 +467,85 @@ i {
   margin-bottom: 150px;
 }
 
-
 // gallery end
+
+
+
+// contacts start
+
+.info {
+  max-width: 770px;
+  padding-top: 60px;
+  margin: 0 auto;
+  
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 68px;
+  }
+
+  &-desc {
+    display: flex;
+    flex-direction: column;
+    margin-right: 54px;
+  }
+
+  &-desc__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: black;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: flex-start;    
+  }
+
+  &-icon {
+    color: #7E5AFF;
+  }
+}
+
+.input {
+  width: 310px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: black;
+  border: 0;
+  border-bottom: 1px solid #2C4058;
+  margin-bottom: 33px;
+  padding-bottom: 14px;
+}
+
+.email {
+  border-bottom: 1px solid #4b556270;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: black;
+}
+
+.button-contact {
+  max-width: 140px;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+
+
+// contacts end
