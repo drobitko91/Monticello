@@ -12,7 +12,7 @@ $(document).ready(function(){
 // news
 $(document).ready(function(){
   $('.news-slider').slick({
-  slidesToShow: 3,
+  slidesToShow: 2.9,
   slidesToScroll: 1,
   // autoplay: true,
   autoplaySpeed: 4000,

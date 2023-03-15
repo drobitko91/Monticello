@@ -1,0 +1,47 @@
+// style for news-slider
+
+.news-slider.slick-initialized.slick-slider.slick-dotted {
+    display: flex; 
+    flex-direction: row;
+    padding-bottom: 40px;
+   
+    .slick-slide {
+      overflow: hidden;
+    }
+  
+    ul {
+      display: flex;
+    }
+    .slick-dots {
+      position: absolute;    
+      top: 100%;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    li {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      border: solid rgb(255, 255, 255) 1px;
+      margin-right: 40px;
+      cursor: pointer;
+        
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  
+    button {
+      display: none;
+    }
+  
+    .slick-active {
+      background-color: white;
+    }
+  
+    .slick-list {
+        margin-left: -18px
+    }
+    
+  }

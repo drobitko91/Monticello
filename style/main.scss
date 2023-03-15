@@ -158,6 +158,7 @@ i {
 // first-screen end
 
 
+
 // projects start
 
 .projects {
@@ -286,6 +287,8 @@ i {
 }
 // projects end
 
+
+
 // news start
 
 .news {
@@ -294,13 +297,16 @@ i {
   background-size: cover;
   position: relative;
 
-  &-wrapper {
-    // max-width: 1600px;
+  &-wrapper {    
     height: 978px;    
   }
 
   &-content {
     position: relative; 
+  }
+  
+  &-slider {
+    // overflow: hidden;
   }
 }
 
@@ -367,12 +373,9 @@ i {
 
 .slider-item {
   max-width: 370px;
+  // max-height: 514px;
   background: white;  
-  margin: 0 20px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  margin: 0 15px;
 }
 
 .slider-content {
@@ -396,7 +399,6 @@ i {
   color: #2C4058;
   margin-bottom: 39px;
 }
-
 
 .profile {
   display: flex;
@@ -428,50 +430,38 @@ i {
 
 // news end
 
-// style for news-slider
 
-.news-slider.slick-initialized.slick-slider.slick-dotted {
-  display: flex; 
-  flex-direction: row;
-  padding-bottom: 40px;
- 
-  .slick-slide {
-    overflow: hidden;
-  }
 
-  ul {
+// gallery start
+
+.gallery {
+  margin-top: 150px;
+
+  &-content {
     display: flex;
+    margin-bottom: 60px;
   }
-  .slick-dots {
-    position: absolute;    
-    top: 100%;
-    width: 100%;
-    justify-content: center;
-  }
-
-  li {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    border: solid rgb(255, 255, 255) 1px;
-    margin-right: 40px;
-    cursor: pointer;
-      
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  button {
-    display: none;
-  }
-
-  .slick-active {
-    background-color: white;
-  }
-
-  .slick-prev.slick-arrow {
-
-  }
-  
 }
+
+.small-pics {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item1, &__item3 {
+    margin: 0 10px 10px 10px;    
+  }
+
+  &__item2, &__item4 {
+    margin-bottom: 10px;
+  }
+}
+
+.button-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+
+// gallery end
