@@ -25,7 +25,9 @@ $(document).ready(function(){
 
 // gallery
 
-
+lightGallery(document.getElementById('gallery-content'), {
+  selector: '.gallery-item',
+});
 
 // contacts
 

@@ -376,8 +376,7 @@ i {
 // arrows end
 
 .slider-item {
-  max-width: 370px;
-  // max-height: 514px;
+  max-width: 370px; 
   background: white;  
   margin: 0 15px;
 }
@@ -546,6 +545,33 @@ i {
   right: 0;
 }
 
-
-
 // contacts end
+
+
+// footer start
+
+.footer {
+  background: url(../img/bg-footer.png),  linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 549px;
+
+  &-content {
+    margin: 0 auto;
+    max-width: 770px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:  65px;
+  }
+}
+
+.copyrights__item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+}
+
+// footer end
