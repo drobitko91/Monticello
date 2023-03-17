@@ -471,6 +471,7 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 .zoom-icon:hover {
   opacity: 1;
@@ -588,6 +589,10 @@ i {
   position: absolute;
   top: 100%;
   right: 0;
+}
+
+.btn_bg {
+  background-color: transparent;
 }
 
 .footer {

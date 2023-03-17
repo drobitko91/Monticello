@@ -33,17 +33,29 @@ lightGallery(document.getElementById('gallery-content'), {
 
 function initMap() {
   
-  const uluru = { lat: -25.344, lng: 131.031 };
+  const position = { lat: 40.694449, lng: -73.8978617 };
   
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
+    zoom: 10,
+    center: position,
   });
  
   const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
+    position,
+    map,
+    title: "91 Nolan Extensions Suite 670",
+    icon: 'img/Pin.png',
+    animation: google.maps.Animation.DROP,
   });
+
+  const infowindow = new google.maps.InfoWindow({
+    content: 'From 07:05AM to 19:30PM'
+});
+
+  google.maps.event.addListener(marker, 'click', function () {
+      infowindow.open(map, marker);
+  });
+  
 }
 
 window.initMap = initMap;
