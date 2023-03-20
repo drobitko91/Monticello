@@ -10,12 +10,14 @@ $(document).ready(function(){
 });
 
 // heading - arrow
-function headingArrowDown() {
-  let button = $('.arrow-heading');
 
+const scrollButton = document.getElementById("arrow-heading");
+const scrollToElement = document.getElementById("projects");
 
-}
-// headingArrowDown();
+scrollButton.addEventListener("click", function() {
+    scrollToElement.scrollIntoView({behavior: "smooth"});
+});
+
 
 // arrow-up
 function arrowUp() {
@@ -31,7 +33,7 @@ function arrowUp() {
 
   button.on('click', (e) => {
       e.preventDefault();
-      $('html').animate({ scrollTop: 0 }, 1000);
+      $('html').animate({ scrollTop: 0 }, 800);
     });
 }
 arrowUp();
