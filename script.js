@@ -7,7 +7,34 @@ $(document).ready(function(){
       speed: 500,
       cssEase: 'linear'
     });
+});
+
+// heading - arrow
+function headingArrowDown() {
+  let button = $('.arrow-heading');
+
+
+}
+// headingArrowDown();
+
+// arrow-up
+function arrowUp() {
+  let button = $('.arrow-heading-up');
+
+  $(window).on('scroll', () => {
+    if ($(this).scrollTop() >= 600) {
+      button.fadeIn();
+    } else {
+      button.fadeOut();
+    }
   });
+
+  button.on('click', (e) => {
+      e.preventDefault();
+      $('html').animate({ scrollTop: 0 }, 1000);
+    });
+}
+arrowUp();
 
 // news
 $(document).ready(function(){
